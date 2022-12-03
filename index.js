@@ -1,1 +1,3 @@
-document.getElementById("HomeV").play();
+unmuteButton.addEventListener('HomeV', function() {
+    video.muted = false;
+  });
