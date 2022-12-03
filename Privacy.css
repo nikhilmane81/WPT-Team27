@@ -1,0 +1,10 @@
+.leftside
+{
+    /* float: left; */
+   flex-direction: row;
+}
+body
+{
+    margin: 20px;
+    font-family:monospace
+}
