@@ -24,8 +24,12 @@ footer
 
 .list
 {
-    padding-left: 20px;
-    color: white;
+    padding-left: 60px;
+    color: white;  
+}
+.list:hover
+{
+    color: aquamarine;
 }
 #leftcol
 {
@@ -33,8 +37,8 @@ footer
 }
 #midcol
 {
-    padding-right: 20px;
-    float: right;
+    padding-right: 60px;
+    float:right;
 }
 #HomeB
 {
@@ -63,7 +67,7 @@ body{
     background-color: black;
 }
 .left{
-    display: inline-block;
+    display: flex;
     position: absolute;
     left: -10px;
     top: 5px;
@@ -76,11 +80,12 @@ body{
 .left img{
 
     width: 115px;
+    height: 70px;
 }
 
 .mid{
-    display: block;
-    position: absolute;
+    display: flex;
+    position:absolute;
     width: 50%;
     margin: 20px auto;
     text-align: center;
@@ -88,6 +93,7 @@ body{
     left: 400px;
 }
 .right{
+    display: flex;
     position: absolute;
     right: 34px;
     top: 20px;
@@ -95,6 +101,7 @@ body{
 }
 
 .navbar{
+    align-items: center;
     display: inline-block;
 }
 .navbar li{
@@ -137,6 +144,11 @@ body{
     display: flex;
     align-items: center;
 }
+/* .container:hover img
+{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+} */
 
 .lists1 {
     background-color: rgb(254, 254, 255);
