@@ -7,32 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SneakerHead</title>
   <link rel="stylesheet" href="index.css">
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"/>
   <!-- <iframe src="https://cross-origin.com/myvideo.html" allow="autoplay"> -->
 </head>
 
 <body>
-  <header class="header">
-    <div class="bg"></div>
-    <!-- left box for logo -->
-    <div class="left">
-      <img src="./img/LOGO.png" alt="LOGO">
-      FITNESS CLUB
-    </div>
-    <!-- mid box for navbar -->
-    <div class="mid">
-      <ul class="navbar">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="#">BRANDS</a></li>
-        <li><a href="#">SALE</a></li>
-      </ul>
-    </div>
-    <!-- right box for buttons -->
-    <div class="right">
-      <button class="btn" onclick="window.location.href='Signup.html';">Sign up</button>
-      <button class="btn" onclick="window.location.href='Login.html';">Log in</button>
-    </div>
-  </header>
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <i class="material-icons" style="font-size: 36px">menu</i>
+    </label>
+    <label class="logo">
+      <img  id="logoimg" src="img/LOGO.jpg" alt="LOGO">
+    </label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="Login.html">Sign in/Register</a></li>
+    </ul>
+  </nav>
+
+  <video id="HomeV" autoplay loop muted>
+    <source src="Img/Thrifter.mp4" type="video/mp4">
+  </video>
+  <img id="HomeB" src="Img/Banner.jpg" alt="Banner">
+
+  
   <div class="container">
     <div class="lists1" id="b1">
       <div><img src="./img/s1.jpg" /></div>
@@ -89,7 +93,7 @@
       <div><img src="./img/s7.jpg" /></div>
       <div>
         <p>Air Jordan 1</p>
-        <p>Air Jordan 1 High Travis Scott Mocha (PADS)</p>
+        <p>High Travis Scott Mocha (PADS)</p>
         <p>Rs.142750</p>
       </div>
     </div>
@@ -97,7 +101,7 @@
       <div><img src="./img/s8.jpg" /></div>
       <div>
         <p>Air Jordan 1</p>
-        <p>Air Jordan 1 High Travis Scott Mocha (VNDS)</p>
+        <p>High Travis Scott Mocha (VNDS)</p>
         <p>Rs.127000</p>
       </div>
     </div>
@@ -128,10 +132,10 @@
       </div>
     </div>
     <div class="lists1">
-      <div><img src="./img/ad3.jpg" /></div>
+      <div><img src="./img/s17.jpg" /></div>
       <div>
-        <p>Adidas</p>
-        <p>Adidas yeezy Boost 700 V2 Mauve</p>
+        <p>Air Jordan 1</p>
+        <p>Air Jordan 1 Mid classic Dark Maroon </p>
         <p>Rs.32495</p>
       </div>
     </div>
@@ -160,10 +164,7 @@
       </div>
     </div>
   </div>
-  <video id="HomeV" autoplay loop muted>
-    <source src="./vid/thrifter-sell.mp4" type="video/mp4">
-  </video>
-  <img id="HomeB" src="./img/HomeBanner.jpg" alt="Banner">
+ 
   <footer class="foot">
     <div id="leftcol">
       <p class="info">
@@ -194,7 +195,11 @@
 
 
 
-  <script src="index.js"></script>
+  <script src="index.js">
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+  </script>
+  </script>
 </body>
 
 </html>

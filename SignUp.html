@@ -8,6 +8,7 @@
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
   <title>Sign-Up</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="index.css">
   <style>
     .bg {
       height: 100PX;
@@ -105,29 +106,25 @@
 
 <body>
 
-  <header class="header">
-    <div class="bg"></div>
-    <!-- left box for logo -->
-    <div class="left">
-      <img src="./img/LOGO.png" alt="LOGO">
-      FITNESS CLUB
-    </div>
-    <!-- mid box for navbar -->
-    <div class="mid">
-      <ul class="navbar">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="#">BRANDS</a></li>
-        <li><a href="#">SALE</a></li>
-      </ul>
-    </div>
-    <!-- right box for buttons -->
-    <div class="right">
-      <!-- <button class="btn">Sign up</button> -->
-      <button class="btn" onclick="window.location.href='Login.html';">Log in</button>
-    </div>
-  </header> <br>
-  <form class="row g-3 needs-validation was-validated" novalidate="">
+  <div>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="material-icons" style="font-size: 36px">menu</i>
+        </label>
+        <label class="logo">
+          <img style="margin-left:-70px ;" id="logoimg" src="img/LOGO.jpg" alt="LOGO">
+        </label>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="Login.html">Sign in/Register</a></li>
+        </ul>
+      </nav>
+</div > <br> <br>
+  <form style="color: black; font-family: sans-serif;" class="row g-3 needs-validation was-validated" novalidate="">
     <div class="col-md-4">
       <label for="validationCustom01" class="form-label">First name</label>
       <input type="text" class="form-control" id="validationCustom01" value="" required="">
