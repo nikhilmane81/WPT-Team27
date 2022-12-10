@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SneakerHead</title>
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"/>
+<link rel="stylesheet" href="Brands.CSS">
+  <!-- <iframe src="https://cross-origin.com/myvideo.html" allow="autoplay"> -->
+</head>
+
+<body>
+  <nav id="nav">
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <i class="material-icons" style="font-size: 36px">menu</i>
+    </label>
+    <label class="logo">
+      <img  id="logoimg" src="img/LOGO.jpg" alt="LOGO">
+    </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="brands.html">Brands</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="Login.html">Sign in/Register</a></li>
+    </ul>
+  </nav>
+
+  <div class="sort">
+    <ul>
+      <li class="sortbtn"><button onclick="displayAll() ">ALL</button></li>
+      <li class="sortbtn">
+        <button id="Jbtn" onclick="displayJordan() ">AIR JORDAN</button>
+      </li>
+      <li class="sortbtn">
+        <button id="Abtn" onclick="displayAdidas() ">ADIDAS</button>
+      </li>
+      <li class="sortbtn"><button id="Pbtn" onclick="displayPuma()">PUMA</button></li>
+      <li class="sortbtn">
+        <button id="Rbtn" onclick="displayRebbok() ">REBOOK</button>
+      </li>
+    </ul>
+  </div>
+  <div class="container2" id="all">
+    <!-- Jordan start -->
+    <div class="Jordan" id="J">
+      <div class="Shoes Women" id="jordan">
+        <div class="img"><img src="Brands/Jordan/J11.jpg" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Air Jordan 1 Mid SEs</p>
+          <p>1 Color</p>
+          <p id="price">Rs.11895</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="jordan">
+        <div class="img"><img src="Brands/Jordan/J21.jpg" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Air Jordan 1 Mid SE Craft</p>
+          <p>1 Color</p>
+          <p id="price">Rs.11867</p>
+        </div>
+      </div>
+
+      <div class="Shoes Women" id="jordan">
+        <div class="img"><img src="Brands/Jordan/J31.jpg" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Air Jordan 1 Zoom CMFT</p>
+          <p>1 Color</p>
+          <p id="price">Rs.11297</p>
+        </div>
+      </div>
+
+      <div class="Shoes Women" id="jordan">
+        <div class="img"><img src="Brands/Jordan/J41.jpg" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Air Jordan 1 Retro OG</p>
+          <p>1 Color</p>
+          <p id="price">Rs.15995</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="jordan">
+        <div class="img"><img src="Brands/Jordan/J51.jpg" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Air Jordan 2 Retro</p>
+          <p>1 Color</p>
+          <p id="price">Rs.18395</p>
+        </div>
+      </div>
+    </div>
+
+<!-- ADIDAS STARTS -->
+
+    <div class="Adidas" id="A">
+      <div class="Shoes Men" id="adidas">
+        <div class="img"><img src="Brands/Adidas/A11.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">SUPERNOVA 2 RUNNING SHOES</p>
+          <p>3 Color</p>
+          <p id="price">Rs.6995</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="adidas">
+        <div class="img"><img src="Brands/Adidas/A21.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">NMD_R1 SHOES</p>
+          <p>3 Color</p>
+          <p id="price">Rs.12499</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="adidas">
+        <div class="img"><img src="Brands/Adidas/A31.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">ZX 8000 PARLEY SHOES</p>
+          <p>3 Color</p>
+          <p id="price">Rs.13999</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="adidas">
+        <div class="img"><img src="Brands/Adidas/A41.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">SUPERSTAR SHOES</p>
+          <p>3 Color</p>
+          <p id="price">Rs.11499</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="adidas">
+        <div class="img"><img src="Brands/Adidas/A52.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">ULTRABOOST 22 SHOES</p>
+          <p>3 Color</p>
+          <p id="price">Rs.20499</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PUMA STARTS -->
+
+    <div class="Puma" id="P">
+      <div class="Shoes Men" id="puma">
+        <div class="img"><img src="Brands/Puma/P11.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Mirage Neon Sneakers</p>
+          <p>3 Color</p>
+          <p id="price">Rs.9499</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="puma">
+        <div class="img"><img src="Brands/Puma/P12.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Mirage Neon Sneakers</p>
+          <p>3 Color</p>
+          <p id="price">Rs.9999</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="puma">
+        <div class="img"><img src="Brands/Puma/p13.jpg" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Blaze of Glory Sneakers</p>
+          <p>3 Color</p>
+          <p id="price">Rs.7899</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="puma">
+        <div class="img"><img src="Brands/Puma/P14.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Rider FV Ultra Sneakers</p>
+          <p>3 Color</p>
+          <p id="price">Rs.8999</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="puma">
+        <div class="img"><img src="Brands/Puma/P15.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">BMW M Motorsport X-Ray</p>
+          <p>3 Color</p>
+          <p id="price">Rs.20499</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REBOOK STARTS -->
+
+    <div class="Rebook" id="R">
+      <div class="Shoes Men" id="rebook">
+        <div class="img"><img src="Brands/Rebook/R1.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Reebok Rbk Classics Court Peak</p>
+          <p>3 Color</p>
+          <p id="price">Rs.6999</p>
+        </div>
+      </div>
+
+      <div class="Shoes Men" id="rebook">
+        <div class="img"><img src="Brands/Rebook/R2.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Reebok RBK Classics Leather</p>
+          <p>3 Color</p>
+          <p id="price">Rs.6999</p>
+        </div>
+      </div>
+      <div class="Shoes Men" id="rebook">
+        <div class="img"><img src="Brands/Rebook/R3.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Reebok Rbk Classics Turbo Restyle</p>
+          <p>3 Color</p>
+          <p id="price">Rs.5999</p>
+        </div>
+      </div>
+      <div class="Shoes Men" id="rebook">
+        <div class="img"><img src="Brands/Rebook/R4.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Reebok Rbk Classics Furylite 95 Shoes</p>
+          <p>3 Color</p>
+          <p id="price">Rs.6999</p>
+        </div>
+      </div>
+      <div class="Shoes Men" id="rebook">
+        <div class="img"><img src="Brands/Rebook/R5.JPG" alt="" /></div>
+        <div class="info">
+          <p id="protitle">Reebok Rbk Classics Heritance Shoes</p>
+          <p>3 Color</p>
+          <p id="price">Rs.6999</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <footer class="foot">
+    <div id="leftcol">
+      <p style="color: white;" class="info">
+        INFORMATION
+      </p>
+      <p>
+        <a class="list" href="Privacy.html"> Privacy Policy</a>
+      </p>
+      <p>
+        <a class="list" href="#">Terms & Conditions</a>
+      </p>
+      <p>
+        <a class="list" href="#">Terms of Services</a>
+      </p>
+    </div>
+    <div id="midcol">
+      <p style="color: white;" class="info">CUSTOMER SERVICE</p>
+      <p>
+        <a class="list" href="">FAQ</a>
+      </p>
+      <p>
+        <a class="list" href="contact.html">CONTACT US</a>
+      </p>
+    </div>
+
+
+  </footer>
+
+  <script src="index.js"> src="https://kit.fontawesome.com/a076d05399.js" ;crossorigin="anonymous"</script>
+  <script>
+    function displayAll() {
+      document.getElementById('J').style.display='flex';
+      document.getElementById('A').style.display='flex';
+      document.getElementById('P').style.display='flex';
+      document.getElementById('R').style.display='flex';
+      console.log("success");
+    }
+    function displayJordan() {
+      document.getElementById('Jbtn').style.textDecoration='underlined';
+      document.getElementById('J').style.display='flex';
+      document.getElementById('P').style.display='none';
+      document.getElementById('A').style.display='none';
+      document.getElementById('R').style.display='none';
+      console.log("success");
+    }
+    function displayAdidas() {
+      document.getElementById('Abtn').style.textDecoration='underlined';
+      document.getElementById('P').style.display='none';
+      document.getElementById('J').style.display='none';
+      document.getElementById('R').style.display='none';
+      document.getElementById('A').style.display='flex';
+      console.log("success");
+    }
+    function displayPuma() {
+      document.getElementById('Rbtn').style.textDecoration='underlined';
+      document.getElementById('J').style.display='none';
+      document.getElementById('A').style.display='none';
+      document.getElementById('R').style.display='none';
+      document.getElementById('P').style.display='flex';
+      console.log("success");
+    }
+    function displayRebbok() {
+      document.getElementById('Pbtn').style.textDecoration='underlined';
+      document.getElementById('R').style.display='flex';
+      document.getElementById('P').style.display='none';
+      document.getElementById('A').style.display='none';
+      document.getElementById('J').style.display='none';
+      console.log("success");
+    }
+  </script>
+</body>
+
+</html>

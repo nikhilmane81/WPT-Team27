@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Jordan</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    ;
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px;
+            font-family: sans-serif;
+        }
+    }
+
+    .container {
+        background-color: white;
+    }
+
+    .col {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="material-icons" style="font-size: 36px">menu</i>
+        </label>
+        <label class="logo">
+            <img id="logoimg" src="img/LOGO.jpg" alt="LOGO">
+        </label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="Login.html">Sign in/Register</a></li>
+        </ul>
+    </nav>
+    <div style="color: black;" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./img/s7.jpg" style="width:100%">
+                        <div class="text">Air Jordan 1 High Travis Scott Mocha (PADS)</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./img/AJ1.jpeg" style="width:100%">
+                        <div class="text">Brand :Nike</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="./img/AJ2.jpeg" style="width:100%">
+                        <div class="text"> Buyer Protection: Available</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 4 / 4</div>
+                        <img src="./img/AJ3.jpeg" style="width:100%">
+                        <div class="text">2-day money-back guarantee</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Air Jordan 1 High Travis Scott Mocha (PADS)</h1>
+                <p>
+                    The Travis Scott x Air Jordan 1 High OG TS SP features a new look on the iconic silhouette,
+                    thanks
+                    to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh
+                    graces
+                    the medial side of the upper, which is built with a blend of white leather and brown suede.
+                    Additional unique details include a double-layer construction on the collar and Scott’s crudely
+                    drawn face logo embossed on the heel.
+                </p>
+                <li>In Stock</li>
+                <li>Brand: Nike</li>
+                <p>Price : Rs.142750</p>
+                <br>
+                <form action="#">
+                    <label for="Size">Size</label>
+                    <select name="Size" id="Size">
+                        <option value="UK8">UK8</option>
+                        <option value="UK9">UK9</option>
+                        <option value="UK10">UK10</option>
+                    </select>
+                    <br> <br>
+                    <input style="font-size: 20px;" type="Submit" value="Add to Cart" onclick="showdiv()"> <br> <br>
+                    
+                    <div id="cart" style="display: none;">
+                        <label class="label" style="display:block ; text-align:left; font-size:40px" for="count"
+                        id="countable">0</label> <br>
+                        <button style="display:block ; text-align:center; font-size:30px ; width: 40px;" id="decre">-</button>
+                        <button style="display:block ; text-align:center; font-size:20px" id="reset">Reset</button>
+                        <button style="display:block ; text-align:center; font-size:30px; width: 40px;" id="incre">+</button>
+                    </div>
+                </form>
+                <br>
+                <div style="padding-left: 10px;border:1px solid black ;width:fit-content;height:fit-content">
+                    <p>
+                    <p>✔ Payment via secured Payment Channels</p>
+                    <p>✔ Authenticity Guarantee></p>
+                    <p>✔ 2-day money-back guarantee</p>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Specification</h2>
+                <p>Product Condition: New</p>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+    <footer class="foot">
+        <div id="leftcol">
+            <p class="info">
+                INFORMATION
+            </p>
+            <p>
+                <a class="list" href="Privacy.html"> Privacy Policy</a>
+            </p>
+            <p>
+                <a class="list" href="#">Terms & Conditions</a>
+            </p>
+            <p>
+                <a class="list" href="#">Terms of Services</a>
+            </p>
+        </div>
+        <div id="midcol">
+            <p class="info">CUSTOMER SERVICE</p>
+            <p>
+                <a class="list" href="">FAQ</a>
+            </p>
+            <p>
+                <a class="list" href="contact.html">CONTACT US</a>
+            </p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        let count = 0;
+        count = Number(count);
+
+        document.getElementById("decre").onclick = function () {
+            if (count == 0) {
+                document.getElementById("countable").innerHTML = count;
+            }
+            else {
+                count -= 1;
+                document.getElementById("countable").innerHTML = count;
+            }
+        }
+
+        document.getElementById("reset").onclick = function () {
+            count = 0;
+            document.getElementById("countable").innerHTML = count;
+        }
+
+        document.getElementById("incre").onclick = function () {
+            count += 1;
+            document.getElementById("countable").innerHTML = count;
+        }
+    </script>
+    <script>
+        function showdiv()
+        {
+            document.getElementById('cart').style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
